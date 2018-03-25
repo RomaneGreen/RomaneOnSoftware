@@ -4,7 +4,9 @@ import Helmet from 'react-helmet'
 import Media from 'react-media'
 import {Header} from '../components/Header'
 import {Sidebar} from '../components/Header'
+import {eader} from '../components/Header'
 import './index.css'
+
 
 
 const TemplateWrapper = ({ children }) => (
@@ -46,6 +48,7 @@ const TemplateWrapper = ({ children }) => (
           ) : (
             <div
               style={{
+                
                 margin: "0 auto",
                 maxWidth: 980,
                 display: "flex",
@@ -60,11 +63,14 @@ const TemplateWrapper = ({ children }) => (
               </div>
 <div style={{ flex: 1 }}>
                 <Sidebar title="Romane on Software"
-                  description="Articles software and web development. All articles are written by Romane Green. Fullstack Web Development."
+                  description="Articles software and web development. 
+                  All articles are written by Romane Green. Fullstack Web Development."
                 />
-                <Sidebar title="About author"
-                  description="I am a Full-stack Web Developer specializing in React and Rails based in NYC.Blog inspired by my favorite software blogger Joel Spolsky."
+                <Sidebar  title="About author"
+                  description="I am a Full-stack Web Developer 
+                  specializing in React and Rails based in NYC.Blog inspired by my favorite software blogger Joel Spolsky."
                 />
+                
               </div>
             </div>
           )
@@ -74,8 +80,13 @@ const TemplateWrapper = ({ children }) => (
   </div>
 );
 
+
+
+
+
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
+
 
 export default TemplateWrapper

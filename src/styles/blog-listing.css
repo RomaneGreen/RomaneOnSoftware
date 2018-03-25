@@ -14,3 +14,14 @@ h2 {
     font-size: 0.8rem !important;
     font-weight: 100 !important;
 }
+
+
+body{
+    background-image: url('./joel.png');
+    background-repeat: no-repeat;
+    padding-left: 10rem;
+}
+
+.nnn{
+    color:red;
+}
